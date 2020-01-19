@@ -41,7 +41,7 @@ public class UserTest {
 
 		// Method binding demo
 		User staff = new Staff();
-		// staff.staticMethod(); // part 1
+		staff.staticMethod(); // part 1
 		// staff.postAReview("");
 		// staff.instanceMethod(10); // part 2
 		staff.instanceMethod(new Staff());
