@@ -22,6 +22,10 @@ public class StaticTest {
 		// b.staticInterfaceMethod(); // Can't invoke interface static methods on
 		// objects, only using interface name
 		// B.staticInterfaceMethod(); // Also impossible
+
+		System.out.println("***************************");
+		C c = new C();
+		c.staticMethod2(); // Invokes static method from closest parent
 	}
 
 }

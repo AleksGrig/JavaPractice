@@ -43,7 +43,7 @@ public class UserTest {
 		User staff = new Staff();
 		staff.staticMethod(); // part 1
 		// staff.postAReview("");
-		// staff.instanceMethod(10); // part 2
-		staff.instanceMethod(new Staff());
+		staff.instanceMethod(10); // part 2
+		//staff.instanceMethod(new Staff());
 	}
 }
