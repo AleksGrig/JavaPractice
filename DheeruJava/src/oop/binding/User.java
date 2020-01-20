@@ -20,6 +20,7 @@ public class User {
 
 	// Method binding demo
 	public static void staticMethod() {
+		System.out.println("User: staticMethod");
 	}
 
 	public void instanceMethod(double d) {
