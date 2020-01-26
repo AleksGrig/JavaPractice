@@ -20,7 +20,7 @@ public class ArraysDemo {
 		System.out.println("Updated Array: " + Arrays.toString(strArray));
 
 		// Creating modifiable ArrayList from an Array
-		strings = new ArrayList(Arrays.asList(strArray));
+		strings = new ArrayList<String>(Arrays.asList(strArray));
 
 		// Showing varargs
 		strings = Arrays.asList("Raj", "Anita");
