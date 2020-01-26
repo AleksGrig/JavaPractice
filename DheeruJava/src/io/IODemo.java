@@ -134,6 +134,8 @@ public class IODemo {
 		while (s1.hasNext()) {
 			System.out.println(s1.next());
 		}
+		scanner.close();
+		s1.close();
 	}
 
 	public static void fileMethodsDemo() {
