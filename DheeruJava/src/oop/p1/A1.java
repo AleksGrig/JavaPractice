@@ -1,7 +1,6 @@
 package oop.p1;
 
 public class A1 {
-	@SuppressWarnings("unused")
 	static private int privateMember = 1;
 	static int defaultMember = 2;
 	static protected int protectedMember = 3;

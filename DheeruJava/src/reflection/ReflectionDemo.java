@@ -62,13 +62,11 @@ public class ReflectionDemo {
 		}
 
 		// Fetch constructor & invoke it
-		@SuppressWarnings("unchecked")
 		Constructor<User> userConstructor = clazz.getDeclaredConstructor(int.class, String.class, String.class,
 				String.class, String.class);
 		User user = userConstructor.newInstance(101, "john", "john@semanticsquare.com", "male", "user");
 
 		// Fetch method & invoke it
-		@SuppressWarnings("unchecked")
 		Method m = clazz.getDeclaredMethod("saveWebLink", String.class, String.class);
 		Object result = m.invoke(user, "http://www.google.com", "Google");
 		System.out.println("Result of invoking saveWebLink: " + ((Boolean) result).booleanValue());

@@ -269,7 +269,7 @@ public class IODemo {
 	public static void main(String[] args) {
 		// fileCopyNoBuffer();
 		// fileCopyWithBufferAndArray();
-		// readFromStandardInput();
+		readFromStandardInput();
 		// fileMethodsDemo();
 		// dirFilter(true);
 		// applyEncoding();
