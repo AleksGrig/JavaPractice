@@ -1,17 +1,17 @@
-package concurrency.synchronization.producer_consumer;
+package concurrency.synchronization.supplier_consumer;
 
-public class Consumer extends Thread {
+public class Producer extends Thread {
 
 	private Resource resource;
 
-	public Consumer(Resource resource) {
+	public Producer(Resource resource) {
 		this.resource = resource;
 	}
 
 	@Override
 	public void run() {
 		for (int i = 0; i < Resource.COUNT; i++) {
-			resource.get();
+			resource.put(i);
 		}
 	}
 }

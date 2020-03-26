@@ -1,4 +1,4 @@
-package concurrency.synchronization.producer_consumer;
+package concurrency.synchronization.supplier_consumer;
 
 public class SynchronizationExample {
 
