@@ -205,7 +205,7 @@ public class IODemo {
 
 		// Ensure Eclipse property is set as UTF8
 		printEncodingDetails("luke");
-		printEncodingDetails("€"); // Euro (Reference:
+		printEncodingDetails("ï¿½"); // Euro (Reference:
 									// http://stackoverflow.com/questions/34922333/how-does-java-fit-a-3-byte-unicode-character-into-a-char-type)
 		printEncodingDetails("\u1F602"); // Non-BMP Unicode Code Point ~ Tears of Joy Emoji (one of Smiley graphic
 											// symbol)
@@ -233,7 +233,7 @@ public class IODemo {
 		SerializableDemo.setVersion(1);
 		System.out.println("static variable version (before serialization): " + SerializableDemo.getVersion());
 		System.out.println("name (before serialization): " + serializableDemo.getName());
-		System.out.println("id (before serialization): " + serializableDemo.getId());
+		System.out.println("id (before serialization): " + serializableDemo.getId()); // transient variable
 
 		try (ObjectOutputStream out = new ObjectOutputStream(
 				new BufferedOutputStream(new FileOutputStream("serial.ser")))) {
@@ -253,7 +253,7 @@ public class IODemo {
 			SerializableDemo.setVersion(2); // Serialization saves only instance variables
 			System.out.println("static variable version (after deserialization): " + serializedObj.getVersion());
 			System.out.println("name (after deserialization): " + serializedObj.getName());
-			System.out.println("id (after deserialization): " + serializedObj.getId());
+			System.out.println("id (after deserialization): " + serializedObj.getId()); // transient variable
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -269,7 +269,7 @@ public class IODemo {
 	public static void main(String[] args) {
 		// fileCopyNoBuffer();
 		// fileCopyWithBufferAndArray();
-		readFromStandardInput();
+		// readFromStandardInput();
 		// fileMethodsDemo();
 		// dirFilter(true);
 		// applyEncoding();

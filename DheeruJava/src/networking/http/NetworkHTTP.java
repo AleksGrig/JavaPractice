@@ -23,7 +23,7 @@ public class NetworkHTTP {
 //            connection.connect();
 
 			try {
-				BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+				BufferedReader rd = new BufferedReader(new InputStreamReader(connection.getInputStream(), "cp1251"));
 
 				StringBuilder sb = new StringBuilder();
 				String line;
