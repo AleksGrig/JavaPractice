@@ -29,6 +29,8 @@ class ObjectReference {
 }
 
 class Superclass {
+	static int demo = new ClassInitializationDemo().getInt();
+
 	static {
 		System.out.println("Superclass: static initializer");
 	}
@@ -42,7 +44,7 @@ class Superclass {
 }
 
 class Subclass extends Superclass implements Superinterface {
-	static final int STATIC_FINAL = 47;
+	static final int STATIC_FINAL = 47 + 1;
 	static final int STATIC_FINAL2 = (int) (Math.random() * 5);
 
 	// static String stringLiteral = "hello";
