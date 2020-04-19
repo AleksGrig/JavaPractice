@@ -33,6 +33,8 @@ public class ExecutorExample {
 
 	private static void threadPoolExample() throws Exception {
 		var executor = Executors.newFixedThreadPool(2);
+		System.out.println(executor.getClass().getName());
+		
 		List<Future<String>> listOfResults = new ArrayList<>();
 
 		for (int i = 0; i < 4; i++) {
