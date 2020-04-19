@@ -111,7 +111,7 @@ public class DateTimeDemo {
 		LocalTime time = LocalTime.of(9, 00, 00);
 		System.out.println("\ntime -- hr: " + time.getHour());
 
-		// LocalDate
+		// LocalDate2
 		LocalDate gameStartDate = LocalDate.of(2017, Month.JULY, 03);
 
 		// LocalDateTime
