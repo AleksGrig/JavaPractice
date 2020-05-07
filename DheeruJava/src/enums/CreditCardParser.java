@@ -7,8 +7,7 @@ import java.util.stream.Collectors;
 
 public class CreditCardParser {
 
-	public enum CreditCard
-	{
+	private enum CreditCard	{
 		VISA(List.of("4"), Set.of(16)),
 		Amex(List.of("34", "37"), Set.of(15)),
 		Discovery(List.of("60", "65"), Set.of(16)),
@@ -49,5 +48,4 @@ public class CreditCardParser {
 			.collect(Collectors.toMap(card -> card, card -> CreditCard.checkCardType(card)));
 		System.out.println(cardTypes);
 	}
-
 }
